@@ -106,7 +106,6 @@ public:
 		if (pid == -1) {
 			perror("Daemon");
 		} else if (pid == 0) {
-			cout << "I'm server epta!" << endl;
 			setsid();
 			while (true) {
 				fd_set readset;
